@@ -27,7 +27,7 @@ public class MultiSelectDialog {
         return this;
     }
     
-    public MultiSelectDialog setOnClickListener(OnSelectedListener listener) {
+    public MultiSelectDialog setOnSelectedListener(OnSelectedListener listener) {
         this.listener = listener;
         return this;
     }

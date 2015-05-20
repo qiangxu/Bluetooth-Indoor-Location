@@ -27,6 +27,8 @@ public class PromptDialog {
     public Dialog build(Context context) {
         inputX = new EditText(context);
         inputY = new EditText(context);
+        inputX.setHint("X");
+        inputY.setHint("Y");
         LinearLayout inputContainer = new LinearLayout(context);
         inputContainer.setOrientation(LinearLayout.VERTICAL);
         inputContainer.addView(inputX);
