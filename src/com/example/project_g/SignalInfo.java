@@ -6,33 +6,35 @@ public class SignalInfo {
     private String address;
     private short rssi;
     
+    public SignalInfo() {}
+    
     public SignalInfo(String name, String address, short rssi) {
         this.name = name;
         this.address = address;
         this.rssi = rssi;
     }
     
-    public void name(String name) {
+    public void setName(String name) {
         this.name = name;
     }
     
-    public void address(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
     
-    public void rssi(short rssi) {
+    public void setRssi(short rssi) {
         this.rssi = rssi;
     }
     
-    public String name() {
+    public String getName() {
         return this.name;
     }
     
-    public String address() {
+    public String getAddress() {
         return this.address;
     }
     
-    public short rssi(){
+    public short getRssi(){
         return this.rssi;
     }
 

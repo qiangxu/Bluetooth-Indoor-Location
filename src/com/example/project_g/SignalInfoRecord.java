@@ -1,6 +1,7 @@
 package com.example.project_g;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SignalInfoRecord {
     
@@ -8,30 +9,40 @@ public class SignalInfoRecord {
         public short x;
         public short y;
         
+        public Position() {}
+        
         public Position(short x, short y) {
             this.x = x;
             this.y = y;
         }
+        
+        public void setX(short x) {
+            this.x = x;
+        }
+        
+        public void setY(short y) {
+            this.x = y;
+        }
     }
     
-    private ArrayList<SignalInfo> infos;
+    private List<SignalInfo> infos;
     private Position position;
-    
-    public void addInfo(SignalInfo info) {
-        if(this.infos == null)
-            this.infos = new ArrayList<SignalInfo>();
-        this.infos.add(info);
-    }
     
     public void setPosition(short x, short y) {
         this.position = new Position(x, y);
     }
     
-    public ArrayList<SignalInfo> infos() {
+    public void setInfos(List<SignalInfo> infos) {
+        this.infos = infos;
+    }
+    
+    public List<SignalInfo> getInfos() {
+        if(this.infos == null)
+            this.infos = new ArrayList<SignalInfo>();
         return this.infos;
     }
     
-    public Position position() {
+    public Position getPosition() {
         return this.position;
     }
 }
