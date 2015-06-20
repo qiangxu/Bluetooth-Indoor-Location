@@ -16,6 +16,14 @@ public class SignalInfoRecord {
             this.y = y;
         }
         
+        public short getX() {
+            return x;
+        }
+        
+        public short getY() {
+            return y;
+        }
+        
         public void setX(short x) {
             this.x = x;
         }
@@ -27,6 +35,10 @@ public class SignalInfoRecord {
     
     private List<SignalInfo> infos;
     private Position position;
+    
+    public void setPosition(Position pos) {
+        this.position = pos;
+    }
     
     public void setPosition(short x, short y) {
         this.position = new Position(x, y);
