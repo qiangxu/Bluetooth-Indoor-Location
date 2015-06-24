@@ -29,7 +29,7 @@ public class SignalInfoRecord {
         }
         
         public void setY(short y) {
-            this.x = y;
+            this.y = y;
         }
     }
     
